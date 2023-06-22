@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.m2e.Maven2LaunchConfigurationType">
+    <booleanAttribute key="M2_BATCH" value="true"/>
+    <stringAttribute key="M2_GOALS" value="-U archetype:generate"/>
+    <listAttribute key="M2_PROPERTIES">
+        <listEntry value="project-name=Camunda Spring Boot Application"/>
+        <listEntry value="project-description=Spring Boot Application using [Camunda](http://docs.camunda.org)."/>
+        <listEntry value="camunda-version=7.19.0"/>
+        <listEntry value="spring-boot-version=2.7.9"/>
+        <listEntry value="archetype-groupId=org.camunda.bpm.archetype"/>
+        <listEntry value="archetype-artifactId=camunda-archetype-spring-boot"/>
+        <listEntry value="archetype-version=7.19.0"/>
+        <listEntry value="archetypeGroupId=org.camunda.bpm.archetype"/>
+        <listEntry value="archetypeArtifactId=camunda-archetype-spring-boot"/>
+        <listEntry value="archetypeVersion=7.19.0"/>
+        <listEntry value="groupId=com.sreeramtraders"/>
+        <listEntry value="artifactId=ordersendreceivetask"/>
+        <listEntry value="version=0.0.1-SNAPSHOT"/>
+        <listEntry value="package=com.sreeramtraders.ordersendreceivetask"/>
+        <listEntry value="outputDirectory=/Users/praneeththiruveedhula/Work/workspace/Camunda/IdeaProjects"/>
+    </listAttribute>
+    <booleanAttribute key="M2_SAVE_BEFORE_LAUNCH" value="false"/>
+    <booleanAttribute key="org.eclipse.debug.ui.private" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/var/folders/sx/vzyylc8j1v76npjgd984fnm40000gn/T/m2e-archetypeGenerator16164402089963863736"/>
+</launchConfiguration>

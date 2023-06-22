@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.camunda.bpm.engine.runtime.MessageCorrelationResult"/>
+    <fullyQualifiedTypeName name="javax.annotation.Resource"/>
+    <fullyQualifiedTypeName name="org.camunda.bpm.engine.RuntimeService"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.CommandLineRunner"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.hibernate.validator.internal.util.logging.LoggerFactory"/>
+    <fullyQualifiedTypeName name="org.camunda.bpm.engine.delegate.BpmnError"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
+</qualifiedTypeNameHistroy>

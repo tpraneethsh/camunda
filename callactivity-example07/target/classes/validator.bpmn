@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_02y6put" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.10.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.19.0">
+  <bpmn:process id="validator" isExecutable="true" camunda:historyTimeToLive="12">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_09sgyid</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_09sgyid" sourceRef="StartEvent_1" targetRef="validateOrder" />
+    <bpmn:endEvent id="Event_1k36ea6">
+      <bpmn:incoming>Flow_0womxb7</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0womxb7" sourceRef="validateOrder" targetRef="Event_1k36ea6" />
+    <bpmn:userTask id="validateOrder" name="validateOrder" camunda:assignee="demo">
+      <bpmn:extensionElements />
+      <bpmn:incoming>Flow_09sgyid</bpmn:incoming>
+      <bpmn:outgoing>Flow_0womxb7</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:textAnnotation id="TextAnnotation_1yaa2ce">
+      <bpmn:text>use isValidated variable</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_047yavj" sourceRef="validateOrder" targetRef="TextAnnotation_1yaa2ce" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="validator">
+      <bpmndi:BPMNShape id="TextAnnotation_1yaa2ce_di" bpmnElement="TextAnnotation_1yaa2ce">
+        <dc:Bounds x="260" y="240" width="100" height="41" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="152" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1k36ea6_di" bpmnElement="Event_1k36ea6">
+        <dc:Bounds x="392" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0c41wit_di" bpmnElement="validateOrder">
+        <dc:Bounds x="240" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_047yavj_di" bpmnElement="Association_047yavj">
+        <di:waypoint x="296" y="160" />
+        <di:waypoint x="308" y="240" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_09sgyid_di" bpmnElement="Flow_09sgyid">
+        <di:waypoint x="188" y="120" />
+        <di:waypoint x="240" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0womxb7_di" bpmnElement="Flow_0womxb7">
+        <di:waypoint x="340" y="120" />
+        <di:waypoint x="392" y="120" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

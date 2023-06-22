@@ -1,0 +1,47 @@
+package com.sreeramtraders.ordersendreceivetask;
+
+import java.util.UUID;
+
+import javax.annotation.Resource;
+
+import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.spring.boot.starter.annotation.EnableProcessApplication;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import java.util.*;
+
+@SpringBootApplication
+@EnableProcessApplication("ordersendreceivetask05")
+public class CamundaApplication implements CommandLineRunner {
+	
+  @Resource
+  private RuntimeService runtimeService;
+  
+  public static void main(String... args) {
+    SpringApplication.run(CamundaApplication.class, args);
+  }
+  
+  @Override
+  public void run(String... args) throws Exception{
+	  final String businessKey = UUID.randomUUID().toString();
+	  
+	  Map<String, Object> processOrderData = new HashMap<>();
+	  processOrderData.put("customerName", "Praneeth Kumar");
+	  processOrderData.put("item", "AirpodMax");
+	  processOrderData.put("giftPackagingIsNeeded", true);
+	  processOrderData.put("postalCode", "64289");
+	  
+	  Map<String, Object> processOrderDataForShipment = new HashMap<>();
+	  processOrderDataForShipment.put("customerName", "Praneeth Kumar");
+	  processOrderDataForShipment.put("item", "AirpodMax");
+	  processOrderDataForShipment.put("postalCode", "64289");
+	  
+	  //starting the first order-send-receive-task BPMN
+	  runtimeService.startProcessInstanceByKey("order-send-receive-task", businessKey, processOrderData);
+	  
+	  //starting the order-receive BPMN with same business key
+	  runtimeService.startProcessInstanceByKey("order-receive", businessKey, processOrderDataForShipment);
+	  
+  }
+}

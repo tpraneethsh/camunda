@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+		<list key="catalogUrl">
+			<item value="https://artifacts.camunda.com/artifactory/camunda-bpm"/>
+			<item value="https://artifacts.camunda.com/artifactory/"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="/Users/praneeththiruveedhula/Work/workspace/Camunda/IdeaProjects/ordersendreceivetask05/src/main/java/com/sreeramtraders/ordersendreceivetask"/>
+			<item value="/Users/praneeththiruveedhula/Work/workspace/Camunda/IdeaProjects/ordersendreceivetask05"/>
+			<item value="/Users/praneeththiruveedhula/Work/workspace/Camunda/IdeaProjects/MyCoolApp"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="https://artifacts.camunda.com/artifactory/camunda-bpm"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.sreeramtraders.springbootdockerization"/>
+			<item value="com.sreeramtraders.errorhandlingwithjava"/>
+			<item value="com.sreeramtraders.callactivity_example"/>
+			<item value="com.sreeramtraders.servicetaskdeligateexpression"/>
+			<item value="com.sreeramtraders.service_task_deligate_expression06"/>
+			<item value="com.sreeramtraders.ordersendreceivetask"/>
+			<item value="com.sreeramtraders.ordersendreceivetask05"/>
+			<item value="com.sreeramtraders.order_send_receive_task"/>
+			<item value="com.sreeramtraders.servicetask"/>
+			<item value="com.sreeramtraders.hellospringboot"/>
+			<item value="com.sreeramtraders.SpringBootCamundaApp"/>
+			<item value="com.sreeramtraders.CamundaSpringBootApp"/>
+			<item value="com.sreeramtraders.MyCoolApp"/>
+		</list>
+		<list key="groupId">
+			<item value="com.sreeramtraders"/>
+		</list>
+		<list key="artifactId">
+			<item value="springboot-dockerization"/>
+			<item value="ErrorHandlingWithJava"/>
+			<item value="callactivity-example"/>
+			<item value="service-task-deligate-expression06"/>
+			<item value="ordersendreceivetask05"/>
+			<item value="ordersendreceivetask"/>
+			<item value="order-send-receive-task"/>
+			<item value="ServiceTaskApp04"/>
+			<item value="HelloSpringBoot02"/>
+			<item value="02HelloSpringBoot"/>
+			<item value="02-HelloSpringBoot"/>
+			<item value="SpringBootCamundaApp"/>
+			<item value="CamundaSpringBootApp"/>
+			<item value="MyCoolApp"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/Users/praneeththiruveedhula/Work/workspace/Camunda/IdeaProjects/CamundaInitializerApp03"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

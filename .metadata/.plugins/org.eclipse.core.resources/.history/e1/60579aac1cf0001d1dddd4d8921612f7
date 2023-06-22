@@ -1,0 +1,39 @@
+package com.sreeramtraders.ordersendreceivetask.deligate;
+
+import java.util.logging.Logger;
+
+import javax.annotation.Resource;
+
+import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.engine.delegate.DelegateExecution;
+import org.camunda.bpm.engine.delegate.JavaDelegate;
+import org.camunda.bpm.engine.runtime.MessageCorrelationResult;
+import org.hibernate.validator.internal.util.logging.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+@Component("sendOrderDelegate")
+public class SendOrderDeligate implements JavaDelegate {
+	
+	private final Logger LOGGER = LoggerFactory.getLogger(SendOrderDeligate.class);
+	
+	@Resource
+	private RuntimeService runtimeservice;
+	
+	@Override
+	public void execute(DelegateExecution execution) throws Exception {
+		
+		System.out.println("SendOrderDeligate execute method. Calling... ");
+		LOGGER.info("SendOrderDelegate");
+		
+		MessageCorrelationResult result = runtimeservice.createMessageCorrelation("messageShipment")
+				.processInstanceBusinessKey(execution.getBusinessKey())
+				.setVariable("caller", SendOrderDeligate.class.getName()).correlateWithResult();
+				
+		DelegateExecution shipmentExecution = (DelegateExecution) result.getExecution();
+		
+		// info("result - {}", shipmentExecution.getVariables());
+		System.out.println("Hi Praneeth... the result is - {}"+ shipmentExecution.getVariables());
+
+	}
+
+}
